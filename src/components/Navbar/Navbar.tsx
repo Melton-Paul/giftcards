@@ -4,10 +4,16 @@ import { NavLink } from "react-router-dom";
 import Logo from "../Logo/Logo";
 
 const Navbar = () => {
-  const [toggleExpansion, setToggleExpansion] = React.useState(false);
+  const [toggleExpansion, setToggleExpansion] = React.useState(true);
 
   function toggle() {
     setToggleExpansion((prev) => !prev);
+  }
+
+  function checkActive({ isActive }: any) {
+    return {
+      color: isActive ? "green" : "initial",
+    };
   }
 
   React.useEffect(() => {}, []);
@@ -22,37 +28,61 @@ const Navbar = () => {
             toggleExpansion && styles.collapsed
           }`}
         >
-          <NavLink className={styles["nav-link"]} to="/">
+          <NavLink to="/" style={checkActive} className={styles["nav-link"]}>
             Home
           </NavLink>
-          <NavLink className={styles["nav-link"]} to="/solutions">
+          <NavLink
+            style={checkActive}
+            className={styles["nav-link"]}
+            to="/solutions"
+          >
             Solutions
           </NavLink>
-          <NavLink className={styles["nav-link"]} to="/features">
+          <NavLink
+            style={checkActive}
+            className={styles["nav-link"]}
+            to="/features"
+          >
             Features
           </NavLink>
-          <NavLink className={styles["nav-link"]} to="/giftcards">
+          <NavLink
+            style={checkActive}
+            className={styles["nav-link"]}
+            to="/giftcards"
+          >
             Gift Cards
           </NavLink>
-          <NavLink className={styles["nav-link"]} to="/clients">
+          <NavLink
+            style={checkActive}
+            className={styles["nav-link"]}
+            to="/clients"
+          >
             Clients
           </NavLink>
-          <NavLink className={styles["nav-link"]} to="/pricing">
+          <NavLink
+            style={checkActive}
+            className={styles["nav-link"]}
+            to="/pricing"
+          >
             Pricing
           </NavLink>
-          <NavLink className={styles["nav-link"]} to="/contact">
+          <NavLink
+            style={checkActive}
+            className={styles["nav-link"]}
+            to="/contact"
+          >
             Contact Us
           </NavLink>
           <NavLink
             className={styles["nav-button"]}
-            style={{ background: "#f48221" }}
+            style={{ background: "#90b44e" }}
             to="/signup"
           >
             Sign Up
           </NavLink>
           <NavLink
             className={styles["nav-button"]}
-            style={{ background: "#1b5994" }}
+            style={{ background: "#049947" }}
             to="/login"
           >
             Login

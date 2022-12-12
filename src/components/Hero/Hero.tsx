@@ -1,0 +1,32 @@
+import styles from "./Hero.module.css";
+const phone = require("../../images/temphone.png");
+
+const Hero = () => {
+  return (
+    <section className={styles.hero}>
+      <div className={`${styles["hero-grid"]} container`}>
+        <div className={styles["hero-content"]}>
+          <h1>GoLoRewards: Fast Gift Cards for Businesses</h1>
+          <p>Send your customers or employees a giftcard for your business. </p>
+          <ul>
+            <li>Fast, convenient option for your branding</li>
+            <li>Easy maintenance</li>
+            <li>Rewards programs tied together</li>
+          </ul>
+          <button className={styles["hero-button"]}>
+            Get Started Now
+            <br /> <span>It takes less than 60 seconds!</span>
+          </button>
+        </div>
+        <div className={styles["hero-img__container"]}>
+          <img src={phone} alt="Phone" className={styles["hero-img"]} />
+        </div>
+      </div>
+      <div className={styles.banner}>
+        <p>Free Branding | Refillable | Rewards program | Easy Maintenance </p>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

@@ -24,8 +24,13 @@ body {
   line-height: 1.5;
   font-size: 1.7rem;
   color: #212427;
+  cursor: default;
 }
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
 a {
   color: #212427;
 }
@@ -57,11 +62,16 @@ h5 {
   font-family: "Poppins", sans-serif;
   color: #212427;
 }
+button {
+  cursor: pointer;
+}
 
 :root {
-  --color-secondary: #f48221;
-  --color-primary: #1b5994;
-  --color-accent: #061222;
+  --color-secondary: #90b44e;
+  --color-primary: #049947;
+  --color-dark: #083a1e;
+  --color-accent: #7e8286;
+  --background: #f5faf5;
 }
 
 .orange {
@@ -73,7 +83,7 @@ h5 {
 .dark {
   color: var(--color-accent);
 }
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
