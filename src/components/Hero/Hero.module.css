@@ -42,6 +42,7 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   line-height: 1.4;
   transition: 0.5s all;
+  width: 100%;
 }
 .hero-button span {
   font-size: 2rem;
@@ -74,6 +75,15 @@
   text-align: center;
   color: white;
   font-weight: bold;
+}
+
+@media screen and (max-width: 400px) {
+  .hero-content {
+    font-size: 2rem;
+  }
+  .hero-content h1 {
+    font-size: 4.3rem;
+  }
 }
 
 @media screen and (min-width: 1040px) {
