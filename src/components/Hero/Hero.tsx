@@ -27,8 +27,7 @@ const Hero = () => {
   );
 };
 
-{
-  /* <section className={styles.hero}>
+/* <section className={styles.hero}>
 <div className={`${styles["hero-grid"]} container`}>
   <div className={styles["hero-content"]}>
     <h1>GoLoRewards: Fast Gift Cards for Businesses</h1>
@@ -51,6 +50,5 @@ const Hero = () => {
   <p>Free Branding | Refillable | Rewards program | Easy Maintenance </p>
 </div>
 </section> */
-}
 
 export default Hero;
