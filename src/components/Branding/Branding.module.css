@@ -1,0 +1,10 @@
+.branding {
+  padding: 10rem 0;
+}
+.branding-content {
+  padding-left: 4rem;
+}
+
+.branding-content > * {
+  margin: 4rem 0;
+}

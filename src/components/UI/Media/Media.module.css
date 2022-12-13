@@ -1,0 +1,32 @@
+.media {
+  display: grid;
+}
+
+.media-content {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.media-img__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-img {
+  width: 100%;
+  max-width: 250px;
+  padding-top: 3rem;
+}
+
+@media screen and (min-width: 1040px) {
+  .media {
+    width: 100%;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .media-img {
+    max-width: 300px;
+  }
+}
