@@ -24,6 +24,11 @@
   font-size: 2rem;
   height: 425px;
 }
+
+.box:hover {
+  transform: scale(1.05);
+}
+
 .box > * {
   margin: 1rem 0;
 }

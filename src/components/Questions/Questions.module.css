@@ -12,6 +12,9 @@
   padding-bottom: 8rem;
   color: black;
 }
+.questions-body {
+  font-size: 2rem;
+}
 
 .secondary-title {
   font-weight: bold;

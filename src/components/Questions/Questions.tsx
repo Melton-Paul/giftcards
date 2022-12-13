@@ -6,7 +6,7 @@ const Questions = () => {
   return (
     <section className={styles.questions}>
       <h2>Talk to us</h2>
-      <p>
+      <p className={styles["questions-body"]}>
         Questions? We'd love to help get your business's gift card program up
         and running. <br /> You can reach out to our team using the forms below.
       </p>
