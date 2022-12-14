@@ -1,8 +1,10 @@
 import styles from "./Hero.module.css";
 import Media from "../UI/Media/Media";
+import { useNavigate } from "react-router";
 const phone = require("../../images/temphone.png");
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <section className={styles.hero}>
       <Media img={phone}>
@@ -14,7 +16,10 @@ const Hero = () => {
             <li>Easy maintenance</li>
             <li>Rewards programs tied together</li>
           </ul>
-          <button className={styles["hero-button"]}>
+          <button
+            onClick={() => navigate("/signup")}
+            className={styles["hero-button"]}
+          >
             Get Started Now
             <br /> <span>It takes less than 60 seconds!</span>
           </button>

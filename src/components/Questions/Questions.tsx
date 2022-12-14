@@ -1,8 +1,10 @@
 import styles from "./Questions.module.css";
+import { useNavigate } from "react-router";
 const business = require("../../images/2.png");
 const support = require("../../images/14.png");
 
 const Questions = () => {
+  const navigate = useNavigate();
   return (
     <section className={styles.questions}>
       <h2>Talk to us</h2>
@@ -12,7 +14,10 @@ const Questions = () => {
       </p>
       <p className={styles["secondary-title"]}>How can we help you?</p>
       <div className={styles["question-card_container"]}>
-        <div className={styles["question-card"]}>
+        <div
+          className={styles["question-card"]}
+          onClick={() => navigate("/contact-sales")}
+        >
           <img src={business} alt="" />
           <h3>Business Sales Enquiry</h3>
           <p>
@@ -20,7 +25,10 @@ const Questions = () => {
             business.
           </p>
         </div>
-        <div className={styles["question-card"]}>
+        <div
+          onClick={() => navigate("/contact-support")}
+          className={styles["question-card"]}
+        >
           <img src={support} alt="" />
           <h3>Gift Card Recipient Support</h3>
           <p>

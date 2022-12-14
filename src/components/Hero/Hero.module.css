@@ -92,7 +92,8 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 15rem 3rem;
+    padding: 10rem 3rem;
+    padding-bottom: 15rem;
   }
   .hero-grid {
     grid-template-columns: repeat(2, 1fr);

@@ -1,0 +1,36 @@
+.input-container {
+  margin: 2rem 0;
+}
+.input-container.check {
+  display: flex;
+  align-items: center;
+}
+
+.input-container.check .input {
+  width: auto;
+  margin-right: 1rem;
+}
+.input-container.check .label {
+  font-weight: 1.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid grey;
+  font-size: 1.8rem;
+}
+.label {
+  font-weight: bold;
+  font-size: 1.9rem;
+}
+.login-button {
+  width: 100%;
+  background: var(--color-secondary);
+  padding: 2rem;
+  color: white;
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 5px;
+}
