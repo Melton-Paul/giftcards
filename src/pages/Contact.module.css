@@ -1,0 +1,10 @@
+.contact {
+  padding-top: 10rem;
+  background: rgb(26, 58, 8);
+  background: linear-gradient(
+    122deg,
+    rgb(86, 116, 68) 3%,
+    rgb(230, 233, 230) 79%
+  );
+  padding-bottom: 9rem;
+}

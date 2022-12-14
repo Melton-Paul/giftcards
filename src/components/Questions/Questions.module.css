@@ -39,6 +39,7 @@
   border: 2px solid grey;
   color: rgb(120, 155, 99);
 }
+
 .question-card > * {
   margin: 1rem 0;
 }
