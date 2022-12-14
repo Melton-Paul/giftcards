@@ -1,6 +1,7 @@
 .banner {
   background: var(--background);
-  padding: 8rem 0;
+  padding: 9rem 0;
+  padding-bottom: 10rem;
 }
 
 .banner-content {
