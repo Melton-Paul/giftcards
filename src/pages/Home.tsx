@@ -6,13 +6,13 @@ import Questions from "../components/Questions/Questions";
 
 const Home = () => {
   return (
-    <main>
+    <>
       <Hero />
       <CTA />
       <Banner />
       <Branding />
       <Questions />
-    </main>
+    </>
   );
 };
 

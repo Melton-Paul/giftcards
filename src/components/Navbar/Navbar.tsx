@@ -16,8 +16,6 @@ const Navbar = () => {
     };
   }
 
-  React.useEffect(() => {}, []);
-
   return (
     <nav className={styles.nav} onClick={toggle}>
       <div className={styles["nav-content"]}>

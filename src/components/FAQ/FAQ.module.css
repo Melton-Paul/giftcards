@@ -1,0 +1,19 @@
+.faq {
+  padding: 5rem;
+}
+
+.faq-list {
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+
+.faq-question {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+.faq-answer {
+  margin-top: 0.5rem;
+  opacity: 0.8;
+  border-bottom: 1px dotted black;
+  padding-bottom: 2rem;
+}

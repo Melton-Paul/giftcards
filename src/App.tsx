@@ -9,22 +9,30 @@ import Login from "./components/Login/Login";
 import ContactSales from "./components/Contact/ContactSales/ContactSales";
 import Solutions from "./components/Solutions/Solutions";
 import Features from "./components/Features/Features";
+import Pricing from "./components/Pricing/Pricing";
+import Privacy from "./components/Privacy/Privacy";
+import FAQ from "./components/FAQ/FAQ";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/contact-sales" element={<ContactSales />} />
-        <Route path="/contact-support" element={<ContactSales />} />
-        <Route path="/solutions" element={<Solutions />} />
-        <Route path="/features" element={<Features />} />
-        <Route path="*" element={<Home />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/contact-sales" element={<ContactSales />} />
+          <Route path="/contact-support" element={<ContactSales />} />
+          <Route path="/solutions" element={<Solutions />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </main>
       <Footer />
     </div>
   );
