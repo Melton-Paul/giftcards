@@ -45,13 +45,13 @@ const Navbar = () => {
           >
             Features
           </NavLink>
-          <NavLink
+          {/* <NavLink
             style={checkActive}
             className={styles["nav-link"]}
             to="/giftcards"
           >
             Gift Cards
-          </NavLink>
+          </NavLink> */}
           {/* <NavLink
             style={checkActive}
             className={styles["nav-link"]}

@@ -8,6 +8,7 @@ import Signup from "./components/Signup/Signup";
 import Login from "./components/Login/Login";
 import ContactSales from "./components/Contact/ContactSales/ContactSales";
 import Solutions from "./components/Solutions/Solutions";
+import Features from "./components/Features/Features";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/contact-sales" element={<ContactSales />} />
         <Route path="/contact-support" element={<ContactSales />} />
         <Route path="/solutions" element={<Solutions />} />
+        <Route path="/features" element={<Features />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <Footer />

@@ -47,10 +47,12 @@
 }
 .cta-container ul {
   list-style-type: none;
+  margin-top: 2rem;
 }
 
 .cta-container li {
   margin: 1rem 0;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 1040px) {

@@ -5,7 +5,7 @@
 .media-content {
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .media-img__container {
