@@ -68,7 +68,6 @@
   padding: 2rem;
   right: 0;
   left: 0;
-  bottom: 0;
   display: flex;
   justify-content: center;
   background: var(--color-dark);
@@ -76,6 +75,33 @@
   text-align: center;
   color: white;
   font-weight: bold;
+}
+
+.banner-link {
+  color: yellow;
+  opacity: 0.9;
+  text-decoration: none;
+}
+.banner-link:hover {
+  color: white;
+}
+
+.banner-top {
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.banner-close {
+  margin-left: auto;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.banner-close:hover {
+  opacity: 0.6;
+}
+
+.banner-bottom {
+  bottom: 0;
 }
 
 @media screen and (max-width: 475px) {

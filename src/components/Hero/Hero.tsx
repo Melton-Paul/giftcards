@@ -1,12 +1,29 @@
 import styles from "./Hero.module.css";
+import React from "react";
 import Media from "../UI/Media/Media";
 import { useNavigate } from "react-router";
 const phone = require("../../images/temphone.png");
 
 const Hero = () => {
   const navigate = useNavigate();
+  const [showBanner, setShowBanner] = React.useState(true);
+
   return (
     <section className={styles.hero}>
+      {showBanner && (
+        <div className={`${styles.banner} ${styles["banner-top"]}`}>
+          <a href="https://golorewards.com" className={styles["banner-link"]}>
+            Have you received a giftcard and are looking for information on it?
+            Click here!
+          </a>
+          <p
+            onClick={() => setShowBanner(false)}
+            className={styles["banner-close"]}
+          >
+            Close{" "}
+          </p>
+        </div>
+      )}
       <Media img={phone}>
         <div className={styles["hero-content"]}>
           <h1>GoLoRewards: Fast Gift Cards for Businesses</h1>
@@ -25,7 +42,7 @@ const Hero = () => {
           </button>
         </div>
       </Media>
-      <div className={styles.banner}>
+      <div className={`${styles.banner} ${styles["banner-bottom"]}`}>
         <p>Free Branding | Refillable | Rewards program | Easy Maintenance </p>
       </div>
     </section>
