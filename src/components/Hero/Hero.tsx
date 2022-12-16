@@ -4,9 +4,16 @@ import Media from "../UI/Media/Media";
 import { useNavigate } from "react-router";
 const phone = require("../../images/temphone.png");
 
+let show = true;
+
 const Hero = () => {
   const navigate = useNavigate();
-  const [showBanner, setShowBanner] = React.useState(true);
+  const [showBanner, setShowBanner] = React.useState(show ? true : false);
+
+  function closeBanner() {
+    show = false;
+    setShowBanner(false);
+  }
 
   return (
     <section className={styles.hero}>
@@ -16,10 +23,7 @@ const Hero = () => {
             Have you received a giftcard and are looking for information on it?
             Click here!
           </a>
-          <p
-            onClick={() => setShowBanner(false)}
-            className={styles["banner-close"]}
-          >
+          <p onClick={closeBanner} className={styles["banner-close"]}>
             Close{" "}
           </p>
         </div>
