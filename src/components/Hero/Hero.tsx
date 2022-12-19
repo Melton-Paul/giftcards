@@ -15,8 +15,12 @@ const Hero = () => {
     setShowBanner(false);
   }
 
+  const style = {
+    paddingTop: showBanner ? "12rem" : "5rem",
+  };
+
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} style={style}>
       {showBanner && (
         <div className={`${styles.banner} ${styles["banner-top"]}`}>
           <a href="https://golorewards.com" className={styles["banner-link"]}>
