@@ -24,8 +24,8 @@ const Hero = () => {
       {showBanner && (
         <div className={`${styles.banner} ${styles["banner-top"]}`}>
           <a href="https://golorewards.com" className={styles["banner-link"]}>
-            Have you received a giftcard and are looking for information on it?
-            Click here!
+            Have you received a gift card or rewards card and are looking for
+            information on it? Click here!
           </a>
           <p onClick={closeBanner} className={styles["banner-close"]}>
             Close{" "}

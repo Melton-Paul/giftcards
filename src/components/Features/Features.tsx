@@ -110,7 +110,7 @@ const Features = () => {
               <div className={styles["img-container"]}>
                 <img src={money} alt="" />
               </div>
-              <div>
+              <div className={styles.text}>
                 <h4>Simple rewards and incentives</h4>
                 <p>
                   Switching your rewards or incentive program to GoLoRewards
