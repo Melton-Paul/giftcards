@@ -1,9 +1,7 @@
 .branding {
   padding: 2rem 0;
   padding-bottom: 4rem;
-}
-.branding-content {
-  padding-left: 4rem;
+  text-align: center;
 }
 
 .branding-content > * {
@@ -13,5 +11,9 @@
 @media screen and (min-width: 1040px) {
   .branding {
     padding: 10rem 0;
+    text-align: left;
+  }
+  .branding-content {
+    padding-left: 4rem;
   }
 }
