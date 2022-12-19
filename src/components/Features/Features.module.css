@@ -30,7 +30,7 @@
   text-align: center;
 }
 .text {
-  margin-left: 1rem;
+  margin-top: 1rem;
 }
 
 .img-container {
@@ -40,8 +40,6 @@
   border-radius: 50%;
   width: 130px;
   height: 130px;
-
-  margin-bottom: 2rem;
   border: 5px solid var(--background);
 }
 
@@ -53,15 +51,12 @@
   max-width: 600px;
 }
 
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 768px) {
   .solutions-list li {
     align-items: center;
     justify-items: center;
     grid-template-columns: 30% 70%;
     justify-items: auto;
     text-align: left;
-  }
-  .img-container {
-    margin-bottom: none;
   }
 }

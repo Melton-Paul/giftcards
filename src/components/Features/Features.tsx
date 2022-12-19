@@ -122,7 +122,7 @@ const Features = () => {
               <div className={styles["img-container"]}>
                 <img src={trophy} alt="" />
               </div>
-              <div>
+              <div className={styles.text}>
                 <h4>Easy Prizes for competitions</h4>
                 <p>
                   Easily promote your brand by running competitions and
@@ -134,7 +134,7 @@ const Features = () => {
               <div className={styles["img-container"]}>
                 <img src={branding} alt="" />
               </div>
-              <div>
+              <div className={styles.text}>
                 <h4>Branding makes a difference</h4>
                 <p>
                   Having gift cards and rewards cards that promote your business
