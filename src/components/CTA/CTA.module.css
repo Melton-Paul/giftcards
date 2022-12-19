@@ -46,7 +46,7 @@
   font-size: 2.5rem;
 }
 .img-container {
-  background: var(--color-primary);
+  background: rgb(170, 199, 151);
   display: flex;
   justify-content: center;
   align-items: center;
