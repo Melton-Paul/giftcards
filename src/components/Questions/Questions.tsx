@@ -1,7 +1,7 @@
 import styles from "./Questions.module.css";
 import { useNavigate } from "react-router";
-const business = require("../../images/supgreen.png");
-const support = require("../../images/chatgreen.png");
+const business = require("../../images/2.png");
+const support = require("../../images/14.png");
 
 const Questions = () => {
   const navigate = useNavigate();
