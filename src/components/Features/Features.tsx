@@ -7,7 +7,7 @@ const branding = require("../../images/staff.png");
 
 const Features = () => {
   return (
-    <section>
+    <section data-aos="slide-left" data-aos-duration="900">
       <article className={`${styles["features-article"]}`}>
         <h2 className={styles["features-article__title"]}>
           Manage rewards info ONLINE

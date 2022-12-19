@@ -2,7 +2,11 @@ import styles from "./Pricing.module.css";
 
 const Pricing = () => {
   return (
-    <section className={`${styles.pricing} container`}>
+    <section
+      data-aos="slide-left"
+      data-aos-duration="900"
+      className={`${styles.pricing} container`}
+    >
       <h2 className={styles["pricing-title"]}>
         GoLoRewards is a One-Price fits all service, made for the little guys.
       </h2>

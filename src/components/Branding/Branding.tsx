@@ -4,7 +4,11 @@ const logoHere = require("../../images/logohere.jpg");
 
 const Branding = () => {
   return (
-    <section className={styles.branding}>
+    <section
+      data-aos="slide-left"
+      data-aos-duration="900"
+      className={styles.branding}
+    >
       <Media img={logoHere}>
         <div className={styles["branding-content"]}>
           <h2>FREE Custom Branding</h2>

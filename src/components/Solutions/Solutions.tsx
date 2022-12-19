@@ -5,7 +5,11 @@ const branding = require("../../images/staff.png");
 
 const Solutions = () => {
   return (
-    <section className={`${styles.solutions} container`}>
+    <section
+      data-aos="slide-left"
+      data-aos-duration="1000"
+      className={`${styles.solutions} container`}
+    >
       <p className={styles["solutions-desc"]}>
         GoLoRewards is the easiest and best way to promote your branding while
         also giving your customers, employees, and clients the ability to

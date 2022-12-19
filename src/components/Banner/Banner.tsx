@@ -7,7 +7,11 @@ const staff = require("../../images/staff.png");
 
 const Banner = () => {
   return (
-    <section className={styles.banner}>
+    <section
+      data-aos="slide-right"
+      data-aos-duration="900"
+      className={styles.banner}
+    >
       <div className={`${styles["banner-content"]} container`}>
         <h2>Use our gift cards for...</h2>
         <section className={styles["banner-container"]}>

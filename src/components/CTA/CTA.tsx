@@ -8,7 +8,11 @@ const CTA = () => {
   const navigate = useNavigate();
 
   return (
-    <section className={`${styles.CTA} container`}>
+    <section
+      data-aos="fade-up"
+      data-aos-duration="700"
+      className={`${styles.CTA} container`}
+    >
       <h2>How does GoLoRewards work?</h2>
       <article className={styles["box-container"]}>
         <div className={styles.box}>

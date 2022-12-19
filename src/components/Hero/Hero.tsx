@@ -32,24 +32,28 @@ const Hero = () => {
           </p>
         </div>
       )}
-      <Media img={phone}>
-        <div className={styles["hero-content"]}>
-          <h1>GoLoRewards: Fast Gift Cards for Businesses</h1>
-          <p>Send your customers or employees a giftcard for your business. </p>
-          <ul>
-            <li>Fast, convenient option for your branding</li>
-            <li>Easy maintenance</li>
-            <li>Rewards programs tied together</li>
-          </ul>
-          <button
-            onClick={() => navigate("/signup")}
-            className={styles["hero-button"]}
-          >
-            Get Started Now
-            <br /> <span>It takes less than 60 seconds!</span>
-          </button>
-        </div>
-      </Media>
+      <div data-aos="flip-left" data-aos-duration="1200">
+        <Media img={phone}>
+          <div className={styles["hero-content"]}>
+            <h1>GoLoRewards: Fast Gift Cards for Businesses</h1>
+            <p>
+              Send your customers or employees a giftcard for your business.{" "}
+            </p>
+            <ul>
+              <li>Fast, convenient option for your branding</li>
+              <li>Easy maintenance</li>
+              <li>Rewards programs tied together</li>
+            </ul>
+            <button
+              onClick={() => navigate("/signup")}
+              className={styles["hero-button"]}
+            >
+              Get Started Now
+              <br /> <span>It takes less than 60 seconds!</span>
+            </button>
+          </div>
+        </Media>
+      </div>
       <div className={`${styles.banner} ${styles["banner-bottom"]}`}>
         <p>Free Branding | Refillable | Rewards program | Easy Maintenance </p>
       </div>

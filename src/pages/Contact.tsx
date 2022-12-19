@@ -4,7 +4,11 @@ import styles from "./Contact.module.css";
 
 const Contact = () => {
   return (
-    <div className={styles.contact}>
+    <div
+      data-aos="slide-left"
+      data-aos-duration="900"
+      className={styles.contact}
+    >
       <Questions />
     </div>
   );
