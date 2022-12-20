@@ -3,13 +3,26 @@ import styles from "./EmailForm.module.css";
 import Button from "../UI/Button/Button";
 import React from "react";
 
+import Captcha from "./ContactSales/Captcha";
+
 export default function EmailForm() {
   const [showConfirmation, setShowConfirmation] = React.useState(false);
   const [state, handleSubmit] = useForm("xbjerrdj");
+  const [submitted, setSubmitted] = React.useState(false);
+
+  const [captchaPassed, setCaptchaPassed] = React.useState(false);
 
   function submitHandler(e) {
     e.preventDefault();
+    setSubmitted(true);
+    if (!captchaPassed) {
+      return;
+    }
     handleSubmit(e);
+  }
+
+  function checkCaptcha(value) {
+    setCaptchaPassed(value);
   }
 
   const languageObj = {
@@ -84,6 +97,8 @@ export default function EmailForm() {
               errors={state.errors}
             />
           </div>
+          <Captcha checkCaptcha={checkCaptcha} submitted={submitted} />
+
           <Button className={styles.button} disabled={state.submitting}>
             {submit}
           </Button>
