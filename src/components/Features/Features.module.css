@@ -29,9 +29,6 @@
   justify-items: center;
   text-align: center;
 }
-.text {
-  margin-top: 1rem;
-}
 
 .img-container {
   display: flex;
@@ -41,6 +38,7 @@
   width: 130px;
   height: 130px;
   border: 5px solid var(--background);
+  margin-bottom: 1rem;
 }
 
 .solutions-list img {
@@ -58,5 +56,8 @@
     grid-template-columns: 30% 70%;
     justify-items: auto;
     text-align: left;
+  }
+  .text {
+    margin-bottom: 1rem;
   }
 }

@@ -1,11 +1,52 @@
 .contact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 3rem;
-  padding-top: 4rem;
+  display: grid;
+  padding: 7rem 4rem;
+  gap: 8rem;
 }
 .contact-title {
-  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+}
+.contact-body {
+  text-align: center;
+
+  opacity: 0.9;
+  font-size: 2.7rem;
+}
+
+.support-box {
+  padding: 3rem;
+  margin-top: 3rem;
+  background: var(--background);
+  max-width: 600px;
+}
+.support-box--list {
+  list-style-type: none;
+}
+.support-box--list li {
+  display: flex;
+  padding: 3rem 0;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.support-box--list li:last-of-type {
+  border-bottom: none;
+}
+
+.support-box--list i {
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-title {
+    font-size: 6rem;
+    text-align: left;
+  }
+  .contact-body {
+    text-align: left;
+  }
 }

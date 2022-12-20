@@ -5,7 +5,11 @@ import { useNavigate } from "react-router";
 const Login = () => {
   const navigate = useNavigate();
   return (
-    <section className={styles.login}>
+    <section
+      data-aos="slide-left"
+      data-aos-duration="1000"
+      className={styles.login}
+    >
       <article className={styles["login-modal"]}>
         <h2>Business Sign In</h2>
         <LoginForm />

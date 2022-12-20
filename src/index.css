@@ -25,6 +25,7 @@ body {
   font-size: 1.7rem;
   color: #212427;
   cursor: default;
+  overflow-x: hidden;
 }
 
 .app {

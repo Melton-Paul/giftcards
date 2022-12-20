@@ -22,7 +22,11 @@ const Hero = () => {
   return (
     <section className={styles.hero} style={style}>
       {showBanner && (
-        <div className={`${styles.banner} ${styles["banner-top"]}`}>
+        <div
+          data-aos="slide-right"
+          data-aos-duration="1200"
+          className={`${styles.banner} ${styles["banner-top"]}`}
+        >
           <a href="https://golorewards.com" className={styles["banner-link"]}>
             Have you received a gift card or rewards card and are looking for
             information on it? Click here!
