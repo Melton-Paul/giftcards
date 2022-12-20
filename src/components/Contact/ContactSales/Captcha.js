@@ -29,7 +29,7 @@ const Captcha = (props) => {
   return (
     <>
       <ReCAPTCHA
-        sitekey="6LcIWpUjAAAAAKBXvgTnRDcij4tnWKlj_Es2SI1V"
+        sitekey="6LerZJUjAAAAAF2DPG3TuI2j7wbRZmkKkf1jzi-b"
         ref={captchaRef}
         onChange={sendData}
       />
