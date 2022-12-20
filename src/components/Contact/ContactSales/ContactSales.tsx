@@ -7,7 +7,11 @@ const ContactSales = () => {
   const pathName = location.pathname;
 
   return (
-    <section className={`${styles.contact} container`}>
+    <section
+      data-aos="slide-left"
+      data-aos-duration="1000"
+      className={`${styles.contact} container`}
+    >
       <article>
         <h2 className={styles["contact-title"]}>
           Contact our {pathName === "/contact-sales" ? "sales" : "support"} team
