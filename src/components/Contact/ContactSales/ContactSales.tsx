@@ -1,7 +1,6 @@
 import EmailForm from "../EmailForm";
 import styles from "./ContactSales.module.css";
 import { useLocation } from "react-router";
-import path from "path";
 
 const ContactSales = () => {
   const location = useLocation();
