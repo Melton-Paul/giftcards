@@ -6,7 +6,7 @@ const defaultCard = require("../../images/defaultcard.png");
 const Card = () => {
   const [search] = useSearchParams();
   const [inputVal, setInputVal] = React.useState("");
-  const [num, setNum] = React.useState(search.get("num"));
+  const num = search.get("num");
 
   function handleChange(e: any) {
     setInputVal(e.target.value);
