@@ -78,6 +78,7 @@
 }
 
 .banner-link {
+  cursor: pointer;
   color: yellow;
   font-size: 1.6rem;
   opacity: 0.9;
