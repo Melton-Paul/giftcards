@@ -27,10 +27,13 @@ const Hero = () => {
           data-aos-duration="1200"
           className={`${styles.banner} ${styles["banner-top"]}`}
         >
-          <a href="https://golorewards.com" className={styles["banner-link"]}>
+          <p
+            onClick={() => navigate("/card")}
+            className={styles["banner-link"]}
+          >
             Have you received a gift card or rewards card and are looking for
             information on it? Click here!
-          </a>
+          </p>
           <p onClick={closeBanner} className={styles["banner-close"]}>
             Close{" "}
           </p>

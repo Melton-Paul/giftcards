@@ -12,6 +12,7 @@ import Features from "./components/Features/Features";
 import Pricing from "./components/Pricing/Pricing";
 import Privacy from "./components/Privacy/Privacy";
 import FAQ from "./components/FAQ/FAQ";
+import Card from "./components/Card/Card";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/card" element={<Card />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>

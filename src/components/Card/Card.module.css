@@ -1,0 +1,65 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+}
+
+.card {
+  background: url("../../images/green-card.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 500px;
+  position: relative;
+}
+
+.card-input {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  background: var(--background);
+  transform: translateX(-50%);
+  border-radius: 5px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+.card-input--title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  white-space: nowrap;
+}
+
+.card-input input::placeholder {
+  font-size: 1.7rem;
+}
+
+.input-container {
+  display: flex;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.input-container button,
+.input-container input {
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.6rem;
+}
+
+.input-container button {
+  background: var(--color-primary);
+  color: white;
+}
+.card-img {
+  position: absolute;
+  bottom: 99px;
+  width: 413px;
+  right: 46px;
+}
