@@ -18,11 +18,15 @@ const Card = () => {
   }, [num]);
 
   return (
-    <section className={`${styles["card-container"]} container`}>
+    <section
+      data-aos="flip-right"
+      data-aos-duration="1200"
+      className={`${styles["card-container"]} container`}
+    >
       <article className={styles.card}>
         <div className={styles["card-input"]}>
           <p className={styles["card-input--title"]}>
-            Please Enter your card number
+            Please enter your card number
           </p>
           <div className={styles["input-container"]}>
             <input
