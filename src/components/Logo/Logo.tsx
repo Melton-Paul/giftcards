@@ -8,7 +8,7 @@ const Logo = () => {
     <div
       className={styles.logo}
       onClick={() => {
-        navigate("/");
+        navigate("/home");
         window.scrollTo(0, 0);
       }}
     >

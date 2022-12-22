@@ -1,14 +1,40 @@
 import styles from "./Hero.module.css";
-import React from "react";
+import React, { useContext } from "react";
 import Media from "../UI/Media/Media";
 import { useNavigate } from "react-router";
+import infoStore from "../../store/info-store";
 const phone = require("../../images/temphone.png");
 
 let show = true;
 
 const Hero = () => {
   const navigate = useNavigate();
+  const infoCtx = useContext(infoStore);
   const [showBanner, setShowBanner] = React.useState(show ? true : false);
+
+  const infoObj = infoCtx.isBusiness
+    ? {
+        title: "GoLoRewards: Fast Gift Cards for Businesses",
+        cta: "Send your customers or employees a giftcard for your business.",
+        list1: "Fast, convenient option for your branding",
+        list2: "Easy maintenance",
+        list3: "Rewards programs tied together",
+        banner1: "Free Branding",
+        banner2: "Refillable",
+        banner3: "Rewards Program",
+        banner4: "Easy Maintenance",
+      }
+    : {
+        title: "GoLoRewards: Start Earning Rewards Points!",
+        cta: "Get rewards for every purchase you make at a business that is signed up with GoLoRewards",
+        list1: "Doesn't cost a dime extra",
+        list2: "Easy to use at your favorite businesses",
+        list3: "Rewards programs tied together",
+        banner1: "Free Rewards",
+        banner2: "Refillable",
+        banner3: "Rewards Program",
+        banner4: "Easy to use",
+      };
 
   function closeBanner() {
     show = false;
@@ -42,14 +68,12 @@ const Hero = () => {
       <div data-aos="flip-left" data-aos-duration="1200">
         <Media img={phone}>
           <div className={styles["hero-content"]}>
-            <h1>GoLoRewards: Fast Gift Cards for Businesses</h1>
-            <p>
-              Send your customers or employees a giftcard for your business.{" "}
-            </p>
+            <h1>{infoObj.title}</h1>
+            <p>{infoObj.cta}</p>
             <ul>
-              <li>Fast, convenient option for your branding</li>
-              <li>Easy maintenance</li>
-              <li>Rewards programs tied together</li>
+              <li>{infoObj.list1}</li>
+              <li>{infoObj.list2}</li>
+              <li>{infoObj.list3}</li>
             </ul>
             <button
               onClick={() => navigate("/signup")}
@@ -62,34 +86,13 @@ const Hero = () => {
         </Media>
       </div>
       <div className={`${styles.banner} ${styles["banner-bottom"]}`}>
-        <p>Free Branding | Refillable | Rewards program | Easy Maintenance </p>
+        <p>
+          {infoObj.banner1} | {infoObj.banner2} | {infoObj.banner3} |{" "}
+          {infoObj.banner4}{" "}
+        </p>
       </div>
     </section>
   );
 };
-
-/* <section className={styles.hero}>
-<div className={`${styles["hero-grid"]} container`}>
-  <div className={styles["hero-content"]}>
-    <h1>GoLoRewards: Fast Gift Cards for Businesses</h1>
-    <p>Send your customers or employees a giftcard for your business. </p>
-    <ul>
-      <li>Fast, convenient option for your branding</li>
-      <li>Easy maintenance</li>
-      <li>Rewards programs tied together</li>
-    </ul>
-    <button className={styles["hero-button"]}>
-      Get Started Now
-      <br /> <span>It takes less than 60 seconds!</span>
-    </button>
-  </div>
-  <div className={styles["hero-img__container"]}>
-    <img src={phone} alt="Phone" className={styles["hero-img"]} />
-  </div>
-</div>
-<div className={styles.banner}>
-  <p>Free Branding | Refillable | Rewards program | Easy Maintenance </p>
-</div>
-</section> */
 
 export default Hero;

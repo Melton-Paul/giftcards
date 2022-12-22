@@ -5,13 +5,16 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import ScrollToTop from "./hooks/scrollToTop";
+import { InfoStoreProvider } from "./store/info-store";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <BrowserRouter>
-    <ScrollToTop />
-    <App />
+    <InfoStoreProvider>
+      <ScrollToTop />
+      <App />
+    </InfoStoreProvider>
   </BrowserRouter>
 );
