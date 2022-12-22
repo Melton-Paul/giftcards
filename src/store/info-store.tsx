@@ -1,4 +1,4 @@
-import React, { createContext, Dispatch } from "react";
+import React, { createContext } from "react";
 
 const infoStore = createContext({
   isBusiness: false,
