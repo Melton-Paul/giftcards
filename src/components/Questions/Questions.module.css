@@ -47,15 +47,17 @@
 }
 .question-card_container {
   margin-top: 1rem;
-  display: flex;
+  display: grid;
   gap: 2rem;
   flex-direction: column;
   width: 100%;
+  max-width: 1400px;
+  margin: 2rem auto;
   justify-content: center;
 }
 
 @media screen and (min-width: 1040px) {
   .question-card_container {
-    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
