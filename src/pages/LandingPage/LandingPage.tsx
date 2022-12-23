@@ -1,6 +1,7 @@
 import infoStore from "../../store/info-store";
+import { Link } from "react-router-dom";
 import { useContext } from "react";
-import Card from "../UI/Cards/Card";
+import Card from "../../components/UI/Cards/Card";
 import styles from "./LandingPage.module.css";
 const giftcard = require("../../images/giftcard.png");
 const business = require("../../images/business.png");
@@ -36,6 +37,9 @@ const LandingPage: React.FC<{
           handleClick={() => toggle(true)}
         />
       </div>
+      <Link target="_blank" className={styles.privacy} to="/privacy">
+        Privacy Agreement
+      </Link>
     </section>
   );
 };

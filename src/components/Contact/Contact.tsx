@@ -1,4 +1,4 @@
-import Questions from "../components/Questions/Questions";
+import Questions from "../Questions/Questions";
 
 import styles from "./Contact.module.css";
 

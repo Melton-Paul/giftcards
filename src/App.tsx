@@ -1,8 +1,10 @@
 import React from "react";
-import LandingPage from "./components/LandingPage/LandingPage";
-import BusinessRoutes from "./pages/BusinessRoutes";
-import CustomerRoutes from "./pages/CustomerRoutes";
+import LandingPage from "./pages/LandingPage/LandingPage";
+import BusinessRoutes from "./routes/BusinessRoutes";
+import CustomerRoutes from "./routes/CustomerRoutes";
 import infoStore from "./store/info-store";
+import { Routes, Route } from "react-router";
+import Privacy from "./components/Privacy/Privacy";
 
 function App() {
   const infoCtx = React.useContext(infoStore);
@@ -13,7 +15,19 @@ function App() {
       {infoCtx.isBusiness && selected ? (
         <BusinessRoutes />
       ) : !selected ? (
-        <LandingPage setIsSelected={setIsSelected} />
+        <>
+          <Routes>
+            <Route
+              path="/"
+              element={<LandingPage setIsSelected={setIsSelected} />}
+            />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route
+              path="*"
+              element={<LandingPage setIsSelected={setIsSelected} />}
+            />
+          </Routes>
+        </>
       ) : (
         <CustomerRoutes />
       )}

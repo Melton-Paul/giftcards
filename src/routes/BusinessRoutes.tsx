@@ -1,5 +1,5 @@
-import Home from "./HomeBusiness";
-import Contact from "./Contact";
+import Contact from "../components/Contact/Contact";
+import HomeBusiness from "../pages/HomeBusiness";
 import Signup from "../components/Signup/Signup";
 import Login from "../components/Login/Login";
 import ContactSales from "../components/Contact/ContactSales/ContactSales";
@@ -19,7 +19,7 @@ const BusinessRoutes = () => {
       <Navbar />
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomeBusiness />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
@@ -31,7 +31,7 @@ const BusinessRoutes = () => {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/card" element={<Card />} />
-          <Route path="*" element={<Home />} />
+          <Route path="*" element={<HomeBusiness />} />
         </Routes>
       </main>
       <Footer />

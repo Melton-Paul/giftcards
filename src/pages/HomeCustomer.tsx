@@ -1,13 +1,11 @@
 import CTA from "../components/CTA/CTA";
-import Footer from "../components/Footer/Footer";
 import Hero from "../components/Hero/Hero";
 import Lifestyle from "../components/Lifestyle/Lifestyle";
-import Navbar from "../components/Navbar/Navbar";
 import Questions from "../components/Questions/Questions";
 const lifestyle1 = require("../images/lifestyle1.jpg");
 const lifestyle2 = require("../images/lifestyle2.jpg");
 
-const Home = () => {
+const HomeCustomer = () => {
   return (
     <>
       <Hero />
@@ -23,4 +21,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeCustomer;

@@ -4,7 +4,7 @@ import CTA from "../components/CTA/CTA";
 import Hero from "../components/Hero/Hero";
 import Questions from "../components/Questions/Questions";
 
-const Home = () => {
+const HomeBusiness = () => {
   return (
     <>
       <Hero />
@@ -16,4 +16,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeBusiness;

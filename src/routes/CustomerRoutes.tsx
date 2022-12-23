@@ -1,4 +1,4 @@
-import Contact from "./Contact";
+import Contact from "../components/Contact/Contact";
 import Signup from "../components/Signup/Signup";
 import Login from "../components/Login/Login";
 import ContactSales from "../components/Contact/ContactSales/ContactSales";
@@ -8,7 +8,7 @@ import Card from "../components/Card/Card";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import { Routes, Route } from "react-router";
-import CustomerHome from "./Customer";
+import HomeCustomer from "../pages/HomeCustomer";
 
 const CustomerRoutes = () => {
   return (
@@ -16,7 +16,7 @@ const CustomerRoutes = () => {
       <Navbar />
       <main>
         <Routes>
-          <Route path="/" element={<CustomerHome />} />
+          <Route path="/" element={<HomeCustomer />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
@@ -25,7 +25,7 @@ const CustomerRoutes = () => {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/card" element={<Card />} />
-          <Route path="*" element={<CustomerHome />} />
+          <Route path="*" element={<HomeCustomer />} />
         </Routes>
       </main>
       <Footer />

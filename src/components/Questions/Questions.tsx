@@ -35,7 +35,9 @@ const Questions = () => {
           img={business}
           title={infoObj.option1Title}
           body={infoObj.option1Body}
-          handleClick={() => navigate("/contact-sales")}
+          handleClick={() =>
+            navigate(infoCtx.isBusiness ? "/contact-sales" : "contact-support")
+          }
         />
         <Card
           img={support}
