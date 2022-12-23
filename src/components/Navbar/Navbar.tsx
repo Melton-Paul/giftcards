@@ -2,9 +2,11 @@ import React from "react";
 import styles from "./Navbar.module.css";
 import { NavLink } from "react-router-dom";
 import Logo from "../Logo/Logo";
+import infoStore from "../../store/info-store";
 
 const Navbar = () => {
   const [toggleExpansion, setToggleExpansion] = React.useState(true);
+  const infoCtx = React.useContext(infoStore);
 
   function toggle() {
     setToggleExpansion((prev) => !prev);
@@ -33,41 +35,31 @@ const Navbar = () => {
           >
             Home
           </NavLink>
-          <NavLink
-            style={checkActive}
-            className={styles["nav-link"]}
-            to="/solutions"
-          >
-            Solutions
-          </NavLink>
-          <NavLink
-            style={checkActive}
-            className={styles["nav-link"]}
-            to="/features"
-          >
-            Features
-          </NavLink>
-          {/* <NavLink
-            style={checkActive}
-            className={styles["nav-link"]}
-            to="/giftcards"
-          >
-            Gift Cards
-          </NavLink> */}
-          {/* <NavLink
-            style={checkActive}
-            className={styles["nav-link"]}
-            to="/clients"
-          >
-            Clients
-          </NavLink> */}
-          <NavLink
-            style={checkActive}
-            className={styles["nav-link"]}
-            to="/pricing"
-          >
-            Pricing
-          </NavLink>
+          {infoCtx.isBusiness && (
+            <>
+              <NavLink
+                style={checkActive}
+                className={styles["nav-link"]}
+                to="/solutions"
+              >
+                Solutions
+              </NavLink>
+              <NavLink
+                style={checkActive}
+                className={styles["nav-link"]}
+                to="/features"
+              >
+                Features
+              </NavLink>
+              <NavLink
+                style={checkActive}
+                className={styles["nav-link"]}
+                to="/pricing"
+              >
+                Pricing
+              </NavLink>
+            </>
+          )}
           <NavLink
             style={checkActive}
             className={styles["nav-link"]}

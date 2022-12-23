@@ -9,6 +9,8 @@
   );
   padding: 3rem 2rem;
   padding-bottom: 15rem;
+  box-shadow: rgba(3, 3, 3, 0.2) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 .hero-grid {
   display: grid;

@@ -13,7 +13,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import { Routes, Route } from "react-router";
 
-const Business = () => {
+const BusinessRoutes = () => {
   return (
     <>
       <Navbar />
@@ -39,4 +39,4 @@ const Business = () => {
   );
 };
 
-export default Business;
+export default BusinessRoutes;

@@ -18,7 +18,7 @@ const CTA = () => {
       }
     : {
         1: "Sign up for an account",
-        2: "Scan or tell your GoLoRewards code to businesses when you make a purchase",
+        2: "Scan the GoLoRewards code at businesses when you make a purchase",
         3: "Start earning rewards!",
       };
 

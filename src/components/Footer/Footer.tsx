@@ -1,32 +1,32 @@
 import styles from "./Footer.module.css";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
 import Logo from "../Logo/Logo";
+import infoStore from "../../store/info-store";
 
 const Footer = () => {
+  const infoCtx = useContext(infoStore);
+
   return (
     <footer className={styles.footer}>
       <div className={`${styles["footer-content"]} container`}>
         <ul className={styles["footer-list"]}>
-          <li>
-            <h2 className={styles["footer-subtitle"]}>Learn More</h2>
-            <ul className={styles["footer-list-item_list"]}>
-              <li>
-                <Link to="/solutions">Solutions</Link>
-              </li>
-              <li>
-                <Link to="/features">Features</Link>
-              </li>
-              {/* <li>
-                <Link to="/giftcards">Gift Cards</Link>
-              </li> */}
-              {/* <li>
-                <Link to="/clients">Clients</Link>
-              </li> */}
-              <li>
-                <Link to="/pricing">Pricing</Link>
-              </li>
-            </ul>
-          </li>
+          {infoCtx.isBusiness && (
+            <li>
+              <h2 className={styles["footer-subtitle"]}>Learn More</h2>
+              <ul className={styles["footer-list-item_list"]}>
+                <li>
+                  <Link to="/solutions">Solutions</Link>
+                </li>
+                <li>
+                  <Link to="/features">Features</Link>
+                </li>
+                <li>
+                  <Link to="/pricing">Pricing</Link>
+                </li>
+              </ul>
+            </li>
+          )}
           <li>
             <h2 className={styles["footer-subtitle"]}>Support</h2>
             <ul className={styles["footer-list-item_list"]}>
