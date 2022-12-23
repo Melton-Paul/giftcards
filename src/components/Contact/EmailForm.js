@@ -97,7 +97,9 @@ export default function EmailForm() {
               errors={state.errors}
             />
           </div>
-          <Captcha checkCaptcha={checkCaptcha} submitted={submitted} />
+          <div className={styles.captcha}>
+            <Captcha checkCaptcha={checkCaptcha} submitted={submitted} />
+          </div>
 
           <Button className={styles.button} disabled={state.submitting}>
             {submit}

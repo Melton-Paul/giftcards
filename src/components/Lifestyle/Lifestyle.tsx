@@ -12,8 +12,9 @@ const Lifestyle: React.FC<{
     background: `url("${img}")`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    backgroundAttachment: "fixed",
-    backgroundPosition: windowSize > 1300 ? "center" : position,
+    backgroundAttachment: windowSize > 768 ? "fixed" : "scroll",
+    backgroundPosition:
+      windowSize > 1300 || windowSize < 768 ? "center" : position,
   };
 
   function setSize() {
