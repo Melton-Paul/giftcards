@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import Logo from "../Logo/Logo";
 import infoStore from "../../store/info-store";
-
+const Footer = () => {
   const infoCtx = useContext(infoStore);
 
   return (
@@ -38,9 +38,6 @@ import infoStore from "../../store/info-store";
               <li>
                 <Link to="/privacy">Privacy Statement</Link>
               </li>
-              {/* <li>
-                <Link to="/status">System Status</Link>
-              </li> */}
             </ul>
           </li>
           <li>
@@ -74,4 +71,5 @@ import infoStore from "../../store/info-store";
     </footer>
   );
 };
+
 export default Footer;
