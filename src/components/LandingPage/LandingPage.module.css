@@ -1,5 +1,5 @@
 .landing {
-  height: 100vh;
+  min-height: 100vh;
   background: rgb(8, 58, 30);
   background: linear-gradient(
     122deg,
@@ -28,11 +28,9 @@
 
 .question-card_container {
   margin-top: 1rem;
-  display: flex;
+  display: grid;
   gap: 2rem;
-  flex-direction: column;
   width: 100%;
-  justify-content: center;
   max-width: 1400px;
 }
 
@@ -41,5 +39,8 @@
     background: url("../../images/patternblur.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .question-card_container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
