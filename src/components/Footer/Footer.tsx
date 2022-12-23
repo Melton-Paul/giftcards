@@ -4,7 +4,6 @@ import { useContext } from "react";
 import Logo from "../Logo/Logo";
 import infoStore from "../../store/info-store";
 
-const Footer = () => {
   const infoCtx = useContext(infoStore);
 
   return (
