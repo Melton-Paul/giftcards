@@ -7,8 +7,7 @@
     rgba(4, 153, 71, 1) 79%,
     rgba(149, 187, 78, 1) 100%
   );
-  background-repeat: no-repeat;
-  background-size: cover;
+
   display: flex;
   padding: 10rem 2rem;
   flex-direction: column;
@@ -34,10 +33,13 @@
   flex-direction: column;
   width: 100%;
   justify-content: center;
+  max-width: 1400px;
 }
 
 @media screen and (min-width: 1040px) {
   .landing {
     background: url("../../images/patternblur.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
