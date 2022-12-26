@@ -65,9 +65,20 @@ const Footer = () => {
         </ul>
         <div className={styles["footer-copyright"]}>
           <Logo />
-          <p>Copyright &#169; 2022 GoLoRewards </p>
+          <p className={styles["footer-copyright--small"]}>
+            Copyright &#169; 2022 GoLoRewards{" "}
+          </p>
         </div>
       </div>
+      <button
+        className={styles["business-toggle"]}
+        onClick={() => {
+          window.scrollTo(0, 0);
+          infoCtx.toggleBusiness(infoCtx.isBusiness ? false : true);
+        }}
+      >
+        Switch to {infoCtx.isBusiness ? "Customer Site" : "Business Site"}
+      </button>
     </footer>
   );
 };

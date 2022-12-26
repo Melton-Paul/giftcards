@@ -28,11 +28,7 @@ const Navbar = () => {
             toggleExpansion && styles.collapsed
           }`}
         >
-          <NavLink
-            to="/home"
-            style={checkActive}
-            className={styles["nav-link"]}
-          >
+          <NavLink to="/" style={checkActive} className={styles["nav-link"]}>
             Home
           </NavLink>
           {infoCtx.isBusiness && (

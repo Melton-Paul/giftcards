@@ -5,4 +5,13 @@
   cursor: pointer;
   font-style: italic;
   transform: translateY(3px);
+  position: relative;
+}
+
+.logo-business {
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  font-size: 2.1rem;
+  color: var(--color-secondary);
 }
