@@ -70,15 +70,20 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <button
+      <a
         className={styles["business-toggle"]}
-        onClick={() => {
-          window.scrollTo(0, 0);
-          infoCtx.toggleBusiness(infoCtx.isBusiness ? false : true);
-        }}
+        // onClick={() => {
+        //   window.scrollTo(0, 0);
+        //   infoCtx.toggleBusiness(infoCtx.isBusiness ? false : true);
+        // }}
+        href={
+          infoCtx.isBusiness
+            ? "https://my.golorewards.netlify.app"
+            : "https://business.golorewards.netlify.app"
+        }
       >
         Switch to {infoCtx.isBusiness ? "Customer Site" : "Business Site"}
-      </button>
+      </a>
     </footer>
   );
 };

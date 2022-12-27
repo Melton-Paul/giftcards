@@ -1,4 +1,3 @@
-import { prependListener } from "process";
 import React, { createContext } from "react";
 
 const infoStore = createContext({
@@ -18,19 +17,23 @@ export const InfoStoreProvider: React.FC<{ children: React.ReactNode }> = ({
 
   function toggleBusiness(boolean: boolean) {
     setIsBusiness(boolean);
+    // if (!boolean) {
+    //   window.location.replace("my.golorewards.netlify.app");
+    // } else {
+    //   window.location.replace("business.golorewards.netlify.app");
+    // }
   }
 
   React.useEffect(() => {
     const regexBus = /business/i;
     const regexMy = /my/i;
-
     if (regexBus.test(urlElements[0])) {
-      toggleBusiness(true);
+      setIsBusiness(true);
       setPreset(true);
       console.log("business");
     }
     if (regexMy.test(urlElements[0])) {
-      toggleBusiness(false);
+      setIsBusiness(false);
       setPreset(true);
       console.log("my");
     }
