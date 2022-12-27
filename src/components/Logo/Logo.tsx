@@ -3,13 +3,13 @@ import React from "react";
 import { useNavigate } from "react-router";
 import infoStore from "../../store/info-store";
 
-const Logo = () => {
+const Logo: React.FC<{ sheen?: boolean }> = ({ sheen = true }) => {
   const navigate = useNavigate();
   const infoCtx = React.useContext(infoStore);
 
   return (
     <div
-      className={styles.logo}
+      className={`${styles.logo} ${sheen && "sheen"} `}
       onClick={() => {
         navigate("/");
         window.scrollTo(0, 0);

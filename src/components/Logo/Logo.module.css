@@ -6,6 +6,8 @@
   font-style: italic;
   transform: translateY(3px);
   position: relative;
+  overflow: hidden;
+  height: 48px;
 }
 
 .logo-business {

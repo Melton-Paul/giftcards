@@ -64,7 +64,7 @@ const Footer = () => {
           </li>
         </ul>
         <div className={styles["footer-copyright"]}>
-          <Logo />
+          <Logo sheen={false} />
           <p className={styles["footer-copyright--small"]}>
             Copyright &#169; 2022 GoLoRewards{" "}
           </p>
