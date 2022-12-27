@@ -18,6 +18,9 @@
   white-space: nowrap;
   text-align: center;
 }
+.footer-copyright p {
+  color: white;
+}
 .footer-copyright--small {
   margin-top: 1rem;
 }

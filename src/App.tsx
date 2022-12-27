@@ -3,12 +3,15 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import BusinessRoutes from "./routes/BusinessRoutes";
 import CustomerRoutes from "./routes/CustomerRoutes";
 import infoStore from "./store/info-store";
+import ScrollTop from "./components/ScrollTop/ScrollTop";
 import { Routes, Route } from "react-router";
 import Privacy from "./components/Privacy/Privacy";
 import TagManager from "react-gtm-module";
 
 function App() {
   const infoCtx = React.useContext(infoStore);
+  const [scrollVal, setScrollVal] = React.useState(0);
+
   const [selected, setIsSelected] = React.useState(false);
 
   console.log(selected);
@@ -22,6 +25,16 @@ function App() {
   }, [infoCtx.preset]);
 
   TagManager.initialize(tagManagerArgs);
+
+  function handleScroll() {
+    setScrollVal(window.scrollY);
+  }
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className="app">
@@ -44,6 +57,7 @@ function App() {
       ) : (
         <CustomerRoutes />
       )}
+      {scrollVal > 400 && <ScrollTop />}
     </div>
   );
 }
