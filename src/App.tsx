@@ -11,9 +11,15 @@ function App() {
   const infoCtx = React.useContext(infoStore);
   const [selected, setIsSelected] = React.useState(false);
 
+  console.log(selected);
+  console.log(infoCtx.preset);
   const tagManagerArgs = {
     gtmId: "GTM-TF9M4TG",
   };
+
+  React.useEffect(() => {
+    setIsSelected(infoCtx.preset);
+  }, [infoCtx.preset]);
 
   TagManager.initialize(tagManagerArgs);
 
